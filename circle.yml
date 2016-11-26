@@ -1,0 +1,7 @@
+dependencies:
+  pre: 
+   - sudo apt-get update -y && sudo apt-get install -y maven && sudo apt-get install -y openjdk-7-jdk; 
+   
+  post:
+   - mvn clean package -DskipTests
+
